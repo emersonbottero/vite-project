@@ -1,8 +1,7 @@
 <template>
   <div class="home">
-    <Basic2> SIm no Home.. </Basic2>
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <Basic2> local working on Home.. </Basic2>
+    <Basic> linked working on Home.. </Basic>
   </div>
 </template>
 
@@ -10,12 +9,14 @@
 import { defineComponent } from "vue";
 import HelloWorld from "../components/HelloWorld.vue";
 import Basic2 from "../components/Basic2.vue";
+import { Basic } from "basic-plugin";
 
 export default defineComponent({
   name: "Home",
   components: {
     HelloWorld,
     Basic2,
+    Basic,
   },
 });
 </script>
